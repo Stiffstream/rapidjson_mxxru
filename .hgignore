@@ -1,0 +1,7 @@
+.externals
+dev/.*/o$
+dev/rapidjson
+dev/sample/sample.*.rb
+dev/sample/example
+.sublime-project
+.sublime-workspace
