@@ -16,7 +16,7 @@ To use *rapidjson_mxxru* it is necessary to have:
 ### Cloning of Hg Repository
 
 ```
-hg clone https://bitbucket.org/sobjectizerteam/rapidjson_mxxru-1.0
+git clone https://github.com/Stiffstream/rapidjson_mxxru
 ```
 And then:
 ```
@@ -31,7 +31,7 @@ For *rapidjson_mxxru* itself:
 ~~~~~
 ::ruby
 MxxRu::arch_externals :rapidjson_mxxru do |e|
-  e.url 'https://bitbucket.org/sobjectizerteam/rapidjson_mxxru-1.0/get/v.1.0.0.tar.bz2'
+  e.url 'https://github.com/Stiffstream/rapidjson_mxxru/archive/v.1.0.1.tar.gz'
 
   e.map_dir 'dev/rapidjson_mxxru' => 'dev'
 end
@@ -52,7 +52,7 @@ end
 RapidJSON is header only library.
 To test mxxru wrapper and build RapidJSON samples:
 ```
-hg clone https://bitbucket.org/sobjectizerteam/rapidjson_mxxru-1.0
+git clone https://github.com/Stiffstream/rapidjson_mxxru
 cd rapidjson_mxxru-1.0
 mxxruexternals
 cd dev
@@ -69,3 +69,4 @@ file for more information.
 
 For the license of *RapidJSON* library see LICENSE file in *rapidson*
 distributive.
+
