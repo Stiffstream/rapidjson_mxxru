@@ -15,11 +15,11 @@ To use *rapidjson_mxxru* it is necessary to have:
 
 ### Cloning of Hg Repository
 
-```
+```sh
 git clone https://github.com/Stiffstream/rapidjson_mxxru
 ```
 And then:
-```
+```sh
 cd rapidjson_mxxru-1.0
 mxxruexternals
 ```
@@ -28,30 +28,28 @@ to download and extract *rapidjson_mxxru*'s dependencies.
 ### MxxRu::externals recipe
 
 For *rapidjson_mxxru* itself:
-~~~~~
-::ruby
+```ruby
 MxxRu::arch_externals :rapidjson_mxxru do |e|
   e.url 'https://github.com/Stiffstream/rapidjson_mxxru/archive/v.1.0.1.tar.gz'
 
   e.map_dir 'dev/rapidjson_mxxru' => 'dev'
 end
-~~~~~
+```
 
 For *rapidjson* dependency:
-~~~~~
-::ruby
+```ruby
 MxxRu::git_externals :rapidjson do |e|
   e.url 'https://github.com/miloyip/rapidjson.git'
   e.commit 'ab791ae' # Latest at 2016.08.09
   e.map_dir 'include/rapidjson' => 'dev/rapidjson/include'
 end
-~~~~~
+```
 
 ## Compilation
 
 RapidJSON is header only library.
 To test mxxru wrapper and build RapidJSON samples:
-```
+```sh
 git clone https://github.com/Stiffstream/rapidjson_mxxru
 cd rapidjson_mxxru-1.0
 mxxruexternals
